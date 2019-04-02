@@ -7,9 +7,62 @@
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("/assets/fonts/MyriadPro-Regular.otf") format("opentype")
+}
+
 body {
     margin: 0;
 }
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fefefe;
+    background-color: #202020;
+    opacity: 0.902;
+    padding: 10px;
+    max-width: 370px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 10px 0;
+}
+
+h4 {
+    font-family: "MyriadPro-Regular";
+    font-size: 18px;
+    color: #fefefe;
+    background-color: #202020;
+    opacity: 0.902;
+    max-width: 260px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 11px 0;
+}
+
+
+
+h6 {
+    font-family: "MyriadPro-Regular";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fefefe;
+    background-color: #e25050;
+    opacity: 0.902;
+    max-width: 148px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 10px 0;
+}
+
+
 
 .container {
     max-width: 1170px;
@@ -49,14 +102,43 @@ header {
     margin-left: 47px;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: #fefefe;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background-color: #e25050;
     box-sizing: padding-box;
     padding: 10px 20px;
 }
 
+.section--slide {
+    background-image: url(/assets/images/slide2.png);
+    background-position: center center;
+}
+
+.phone {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.phone--icon {
+    background-color: #bd4141;
+    padding: 10px 12px;
+}
+
+.phone--number {
+    font-family: "MyriadPro-Regular";
+    background-color: #e25050;
+    color: #fff;
+    padding: 10px 17px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 177px;
+    padding-bottom: 216px;
+    margin-left: 7px;
+}
