@@ -12,13 +12,18 @@ font-family: 'Open Sans', sans-serif; */
     src: url("/assets/fonts/MyriadPro-Regular.otf") format("opentype")
 }
 
+@font-face {
+    font-family: "DroidSerifItalic";
+    src: url("../fonts/DroidSerifItalic.ttf") format("opentype")
+}
+
 body {
     margin: 0;
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 30px;
     color: #fefefe;
@@ -32,37 +37,111 @@ h1 {
     padding: 10px 0;
 }
 
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #202020;
+    text-align: center;
+}
+
+h2 span {
+    color: #e25050;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section--trainers h3 {
+    padding-top: 53px;
+    padding-bottom: 3px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section--trainers h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 45px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
 h4 {
-    font-family: "MyriadPro-Regular";
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.heading h4 {
     color: #fefefe;
     background-color: #202020;
     opacity: 0.902;
     max-width: 260px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 0;
     margin-bottom: 2px;
     padding: 11px 0;
+}
+
+h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.trainers h5 {
+    margin: 0;
+    color: #202020;
+    padding-top: 15px;
+    padding-left: 20px;
 }
 
 
 
 h6 {
-    font-family: "MyriadPro-Regular";
+    font-family: 'Oswald', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+.trainers h6 {
+    margin: 0;
+    color: #afafaf;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 18px;
+}
+
+
+
+
+
+
+.heading h6 {
     color: #fefefe;
     background-color: #e25050;
     opacity: 0.902;
     max-width: 148px;
-    text-align: center;
-    margin-top: 0;
     margin-bottom: 2px;
     padding: 10px 0;
 }
-
-
 
 .container {
     max-width: 1170px;
@@ -114,8 +193,8 @@ header {
 }
 
 .section--slide {
-    background-image: url(/assets/images/slide2.png);
-    background-position: center center;
+    background-image: url(../images/slide2.png);
+    background-position: center;
 }
 
 .phone {
@@ -138,7 +217,124 @@ header {
 .heading {
     display: flex;
     flex-direction: column;
-    padding-top: 177px;
-    padding-bottom: 216px;
+    padding-top: 173px;
+    padding-bottom: 211px;
     margin-left: 7px;
+}
+
+.section--training {
+    padding-top: 25px;
+}
+
+.welcome h2 {
+    margin-bottom: 0;
+}
+
+.welcome p {
+    font-family: "DroidSerifItalic";
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+    margin-top: 6px;
+}
+
+.training {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    margin-bottom: 9px;
+}
+
+.training h4 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.training div {
+    flex-basis: 32%;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.training p {
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.615;
+    margin-top: 22px;
+}
+
+.section--trainers {
+    background-image: url(../images/background_trainer.png);
+    padding-bottom: 30px;
+}
+
+.trainers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.trainers div {
+    flex-basis: 23%;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.trainers p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #777;
+    line-height: 1.615;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.schreffler,
+.carrington,
+.huffman,
+.roger,
+.cameron {
+    position: relative;
+}
+
+
+
+.information {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    display: none;
+}
+
+.schreffler:hover .information,
+.carrington:hover .information,
+.huffman:hover .information,
+.roger:hover .information,
+.cameron:hover .information {
+    display: block;
+}
+
+
+
+.information ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+.information li {
+    list-style-type: none;
+}
+
+.information li :hover {
+    color: #e25050;
 }
