@@ -131,8 +131,17 @@ h5 {
     padding-left: 20px;
 }
 
-.section--gallery h5{
+.section--gallery h5 {
     margin-top: 4px;
+}
+
+.contact h5 {
+    color: #fff;
+}
+
+.message h5 {
+    color: #fff;
+    margin-bottom: 28px;
 }
 
 
@@ -151,33 +160,15 @@ h6 {
     text-align: left;
     padding-left: 20px;
     padding-bottom: 18px;
-    text-align: center;
 }
 
-.section--gallery h6{
+.section--gallery h6 {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     color: #afafaf;
     line-height: 2;
 
 }
-
-.January_18__2014 {
-    font-size: 12px;
-    font-family: "Oswald Regular";
-    color: rgb(175, 175, 175);
-    line-height: 2;
-    position: absolute;
-    left: 1300.922px;
-    top: 2950.143px;
-    z-index: 174;
-}
-
-
-
-
-
-
 
 .heading h6 {
     color: #fefefe;
@@ -186,6 +177,10 @@ h6 {
     max-width: 148px;
     margin-bottom: 2px;
     padding: 10px 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 .container {
@@ -376,9 +371,6 @@ header {
     padding-top: 50px;
 }
 
-.information li {
-    list-style-type: none;
-}
 
 .information li :hover {
     color: #e25050;
@@ -395,6 +387,10 @@ header {
     flex-basis: 23%;
 }
 
+.section--gallery {
+    margin-bottom: 50px;
+}
+
 
 .section--gallery p {
     font-family: 'Open Sans', sans-serif;
@@ -407,10 +403,188 @@ header {
     margin-top: 20px;
 }
 
+footer {
+    background-image: url(../images/background_footer.png);
+    background-position: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    margin-bottom: 58px;
+}
+
+.social:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #323232;
+}
+
+.small-startups {
+    display: flex;
+    max-width: 620px;
+}
+
+.small-startups img {
+    align-self: center;
+}
+
+.small-startups p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.692;
+    margin-left: 17px;
+}
+
+.small-startups p span {
+    color: #717171;
+}
+
+.social--list {
+    display: flex;
+    margin-top: 25px;
+}
+
+.social--list li {
+    margin-left: 15px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    max-width: 360px;
+
+}
+
+.contact p {
+    color: #c6c6c6;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 23px;
+    line-height: 1.75;
+}
 
 
 
 
+.contact--phone {
+    color: #c6c6c6;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 23px;
+}
 
+.contact--email {
+    color: #c6c6c6;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 5px;
+}
 
+.contact--phone img,
+.contact--email img {
+    margin-right: 10px;
+}
 
+.message {
+    width: 670px;
+}
+
+form input {
+    background: transparent;
+    border: #4f4f4f solid 1px;
+    text-transform: uppercase;
+    color: #656565;
+    width: 190px;
+    padding: 10px;
+}
+
+form textarea {
+    background: transparent;
+    border: #4f4f4f solid 1px;
+    text-transform: uppercase;
+    color: #656565;
+    width: 420px;
+    padding: 10px;
+    margin-right: 11px;
+}
+
+form input:nth-child(1),
+form input:nth-child(2) {
+    margin-right: 12px;
+    margin-bottom: 14px;
+}
+
+form button {
+    font-family: "MyriadPro-Regular";
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #e25050;
+    border: 0;
+    color: #fff;
+    width: 213px;
+    height: 36px;
+    text-align: left;
+    padding-left: 22px;
+    padding-top: 5px;
+    vertical-align: top;
+}
+
+form button img {
+    float: right;
+    padding-right: 15px;
+    padding-top: 3px;
+
+}
+
+.form__button {
+    font-family: "Parangon-530C";
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #f6ae48;
+    cursor: pointer;
+    border: 0;
+    border-radius: 14px;
+    padding-top: 5px;
+    width: 144px;
+    height: 43px;
+    color: #fff;
+
+}
+
+.copyright {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 78px;
+    padding-bottom: 27px;
+}
+
+.copyright p {
+    color: #707070;
+
+}
+
+.copyright a {
+    color: #e25050;
+    margin-top: 16px;
+}
