@@ -21,6 +21,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -131,8 +135,9 @@ h5 {
     padding-left: 20px;
 }
 
-.section--gallery h5 {
+.gallery h5 {
     margin-top: 4px;
+    color: #202020;
 }
 
 .contact h5 {
@@ -147,10 +152,10 @@ h5 {
 
 
 h6 {
+    margin: 0;
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    margin-top: 0;
 
 }
 
@@ -162,7 +167,7 @@ h6 {
     padding-bottom: 18px;
 }
 
-.section--gallery h6 {
+.gallery h6 {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     color: #afafaf;
@@ -174,9 +179,9 @@ h6 {
     color: #fefefe;
     background-color: #e25050;
     opacity: 0.902;
-    max-width: 148px;
+    max-width: 135px;
     margin-bottom: 2px;
-    padding: 10px 0;
+    padding: 7px;
 }
 
 li {
@@ -214,11 +219,13 @@ header {
     display: flex;
     list-style: none;
     padding: 0;
-    margin-top: 41px;
+    margin-top: 31px;
+    margin-bottom: 29px;
 }
 
 .menu li {
-    margin-left: 47px;
+    margin-left: 20px;
+    padding: 10px 12px;
 }
 
 .menu li a {
@@ -226,10 +233,8 @@ header {
     color: #fefefe;
 }
 
-.menu li a:hover {
+.menu li:hover {
     background-color: #e25050;
-    box-sizing: padding-box;
-    padding: 10px 20px;
 }
 
 .section--slide {
@@ -248,16 +253,20 @@ header {
 }
 
 .phone--number {
-    font-family: "MyriadPro-Regular";
     background-color: #e25050;
+    padding: 8px 20px;
+}
+
+.phone--number a {
+    font-family: 'Oswald', sans-serif;
     color: #fff;
-    padding: 10px 17px;
+    text-decoration: none;
 }
 
 .heading {
     display: flex;
     flex-direction: column;
-    padding-top: 173px;
+    padding-top: 179px;
     padding-bottom: 211px;
     margin-left: 7px;
 }
@@ -353,22 +362,229 @@ header {
     display: none;
 }
 
+.icon {
+    display: inline-block;
+    background-image: url(../images/sprites.png);
+    background-repeat: no-repeat;
+}
+
+.icon__tablet {
+    background-position: -2px -186px;
+    width: 74px;
+    height: 93px;
+}
+
+.icon__heart {
+    background-position: -351px -86px;
+    width: 74px;
+    height: 93px;
+}
+
+.icon__drink {
+    background-position: -152px -87px;
+    width: 74px;
+    height: 93px;
+}
+
+.icon__flag {
+    background-position: -252px -87px;
+    width: 74px;
+    height: 93px;
+}
+
+.icon__like {
+    background-position: -451px -87px;
+    width: 74px;
+    height: 93px;
+}
+
+.icon__cardiogram {
+    background-position: -52px -87px;
+    width: 74px;
+    height: 93px;
+}
+
+.icon__facebook--gray {
+    background-position: -10px -1px;
+    width: 7px;
+    height: 15px;
+}
+
+.icon__facebook--white {
+    background-position: -109px -4px;
+    width: 7px;
+    height: 15px;
+}
+
+.icon__facebook:hover {
+    background-position: -60px -1px;
+    width: 7px;
+    height: 15px;
+}
+
+.icon__twitter--gray {
+    background-position: -306px -51px;
+    width: 14px;
+    height: 13px;
+}
+
+.icon__twitter--white {
+    background-position: -407px -52px;
+    width: 14px;
+    height: 13px;
+}
+
+.icon__twitter--big {
+    background-position: -166px -301px;
+    min-width: 35px;
+    height: 20px;
+}
+
+.icon__twitter:hover {
+    background-position: -356px -51px;
+    width: 14px;
+    height: 13px;
+}
+
+.icon__pinterest--gray {
+    background-position: -458px -2px;
+    width: 12px;
+    height: 15px;
+}
+
+.icon__pinterest--white {
+    background-position: -558px 0;
+    width: 12px;
+    height: 15px;
+}
+
+.icon__pinterest:hover {
+    background-position: -506px -3px;
+    width: 12px;
+    height: 15px;
+}
+
+.icon__google-plus--gray {
+    background-position: -154px -2px;
+    width: 15px;
+    height: 13px;
+}
+
+.icon__google-plus--white {
+    background-position: -255px -3px;
+    width: 15px;
+    height: 13px;
+}
+
+.icon__google-plus:hover {
+    background-position: -205px -2px;
+    width: 15px;
+    height: 13px;
+}
+
+.icon__tumblr--gray {
+    background-position: -156px -51px;
+    width: 10px;
+    height: 15px;
+}
+
+.icon__tumblr--white {
+    background-position: -260px -52px;
+    width: 10px;
+    height: 15px;
+}
+
+.icon__tumblr:hover {
+    background-position: -208px -52px;
+    width: 10px;
+    height: 15px;
+}
+
+.icon__instagram--gray {
+    background-position: -308px -1px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon__instagram--white {
+    background-position: -406px -1px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon__instagram:hover {
+    background-position: -354px -1px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon__rss--gray {
+    background-position: -5px -50px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon__rss--white {
+    background-position: -106px -50px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon__rss:hover {
+    background-position: -55px -50px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon__phone {
+    background-position: -9px -105px;
+    width: 7px;
+    height: 12px;
+}
+
+.icon__email {
+    background-position: -558px -55px;
+    width: 12px;
+    height: 9px;
+}
+
+.icon__arrow {
+    background-position: -460px -53px;
+    width: 7px;
+    height: 13px;
+}
+
 .schreffler:hover .information,
 .carrington:hover .information,
 .huffman:hover .information,
 .roger:hover .information,
 .cameron:hover .information {
     display: block;
+    height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .information ul {
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
+    padding: 45px 45px 0;
 }
 
 
@@ -383,9 +599,12 @@ header {
     margin-top: 60px;
 }
 
-.gallery div {
+.gallery a {
     flex-basis: 23%;
+    margin-bottom: 28px;
 }
+
+
 
 .section--gallery {
     margin-bottom: 50px;
@@ -435,7 +654,7 @@ footer {
     max-width: 620px;
 }
 
-.small-startups img {
+.small-startups span {
     align-self: center;
 }
 
@@ -468,7 +687,7 @@ footer {
 
 .contact {
     max-width: 360px;
-
+    margin-right: 20px;
 }
 
 .contact p {
@@ -483,24 +702,30 @@ footer {
 
 
 
-.contact--phone {
-    color: #c6c6c6;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 12px;
+.contact__phone {
     margin-top: 23px;
 }
 
-.contact--email {
-    color: #c6c6c6;
+.contact__phone a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    color: #c6c6c6;
     font-size: 12px;
+}
+
+.contact__email {
     margin-top: 5px;
 }
 
-.contact--phone img,
-.contact--email img {
+.contact__email a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #c6c6c6;
+    font-size: 12px;
+}
+
+.contact__phone span,
+.contact__email span {
     margin-right: 10px;
 }
 
@@ -508,65 +733,85 @@ footer {
     width: 670px;
 }
 
-form input {
-    background: transparent;
-    border: #4f4f4f solid 1px;
-    text-transform: uppercase;
-    color: #656565;
-    width: 190px;
-    padding: 10px;
+.form {
+    display: flex;
+    flex-direction: column;
 }
 
-form textarea {
-    background: transparent;
-    border: #4f4f4f solid 1px;
-    text-transform: uppercase;
-    color: #656565;
-    width: 420px;
-    padding: 10px;
-    margin-right: 11px;
-}
-
-form input:nth-child(1),
-form input:nth-child(2) {
-    margin-right: 12px;
+.form__top {
+    display: flex;
     margin-bottom: 14px;
 }
 
-form button {
-    font-family: "MyriadPro-Regular";
+.form__top input {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    background: transparent;
+    border: #4f4f4f solid 1px;
+    text-transform: uppercase;
+    color: #fff;
+    width: calc(33% - 20px);
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+.form__top input:nth-child(2) {
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.form__bottom {
+    display: flex;
+}
+
+.form__bottom textarea {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    background: transparent;
+    border: #4f4f4f solid 1px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 63%;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+.form__submit {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    width: 31.8%;
+}
+
+.form__submit button {
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     background: #e25050;
     border: 0;
     color: #fff;
-    width: 213px;
     height: 36px;
     text-align: left;
-    padding-left: 22px;
-    padding-top: 5px;
+    padding-left: 23px;
     vertical-align: top;
+    letter-spacing: 0.06em;
+    margin-bottom: 15px;
 }
 
-form button img {
+.form__submit span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #707070;
+}
+
+
+
+
+button .icon__arrow {
     float: right;
     padding-right: 15px;
-    padding-top: 3px;
-
-}
-
-.form__button {
-    font-family: "Parangon-530C";
-    text-transform: uppercase;
-    font-size: 14px;
-    background: #f6ae48;
-    cursor: pointer;
-    border: 0;
-    border-radius: 14px;
-    padding-top: 5px;
-    width: 144px;
-    height: 43px;
-    color: #fff;
+    margin-top: 4px;
 
 }
 
@@ -587,4 +832,179 @@ form button img {
 .copyright a {
     color: #e25050;
     margin-top: 16px;
+    text-decoration: underline;
+}
+
+
+/************************************************************media*************************************************************************/
+
+
+@media (max-width: 1200px) {
+    .trainers{
+        justify-content: space-evenly;
+    }
+
+    .gallery{
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .form__bottom {
+        flex-direction: column;
+    }
+
+    .form__bottom textarea {
+        width: calc(100% - 20px);
+        margin-bottom: 14px;
+    }
+
+    .form__submit {
+        margin: auto;
+        width: 41%;
+    }
+
+    .form__submit span {
+        text-align: center;
+    }
+
+    .contact {
+        margin-right: 20px;
+    }
+
+    .logo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu {
+        margin-top: 12px;
+        margin-bottom: 0px;
+    }
+
+    .menu li {
+        margin-left: 15px;
+        padding: 16px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .social {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .social--list {
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .social--list li:first-child {
+        margin-left: 0;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .contact {
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .message {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container--flex{
+        flex-direction: column;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .menu{
+        margin-top: 0;
+        justify-content: inherit;
+    }
+
+    .menu li{
+        margin-left: 0;
+    }
+
+    .training div{
+        flex-basis: 48%;
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+    .feedback {
+        flex-direction: column-reverse;
+    }
+
+    .social__block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form__top {
+        flex-direction: column;
+    }
+
+    .form__top input {
+        width: calc(100% - 20px);
+        margin-top: 14px;
+    }
+
+    .form__top input:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form__submit {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .form__bottom textarea {}
+
+    .copyright {
+        margin-top: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    h1{
+        font-size: 21px;
+        text-align: left;
+        padding-left: 22px;
+    }
+
+    .heading h6{
+        padding-left: 22px;
+        text-align: left;
+    }
+
+    .heading h4{
+        font-size: 16px;
+        text-align: left;
+        padding-left: 22px;
+    }
+
+    .training div {
+        flex-basis: 100%;
+    }
 }

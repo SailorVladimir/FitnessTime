@@ -1,0 +1,232 @@
+.facebook_gray, .facebook_red, .facebook_white, .google-plus_gray, .google-plus_red, .google-plus_white, .instagram_gray, .instagram_red, .instagram_white, .pinterest_gray, .pinterest_red, .pinterest_white, .rss_gray, .rss_red, .rss_white, .tumblr_gray, .tumblr_red, .tumblr_white, .twitter_gray, .twitter_red, .twitter_white, .arrow, .check, .contact_email, .contact_phone, .icon-cardiogram, .icon-drink, .icon-flag, .icon-heart, .icon-like, .icon-tablet, .magnifier, .brand-instagram, .brand-microsoft, .brand-shutterstock, .brand-spotify, .brand-square, .twitter_big{
+	background: url(sprites.png) no-repeat;
+}
+
+.facebook_gray{
+	background-position: -10px -1px ;
+	width: 7px;
+	height: 15px;
+}
+
+.facebook_red{
+	background-position: -60px -1px ;
+	width: 7px;
+	height: 15px;
+}
+
+.facebook_white{
+	background-position: -109px -4px ;
+	width: 7px;
+	height: 15px;
+}
+
+.google-plus_gray{
+	background-position: -154px -2px ;
+	width: 15px;
+	height: 13px;
+}
+
+.google-plus_red{
+	background-position: -205px -2px ;
+	width: 15px;
+	height: 13px;
+}
+
+.google-plus_white{
+	background-position: -255px -3px ;
+	width: 15px;
+	height: 13px;
+}
+
+.instagram_gray{
+	background-position: -308px -1px ;
+	width: 15px;
+	height: 15px;
+}
+
+.instagram_red{
+	background-position: -354px -1px ;
+	width: 15px;
+	height: 15px;
+}
+
+.instagram_white{
+	background-position: -406px -1px ;
+	width: 15px;
+	height: 15px;
+}
+
+.pinterest_gray{
+	background-position: -458px -2px ;
+	width: 12px;
+	height: 15px;
+}
+
+.pinterest_red{
+	background-position: -506px -3px ;
+	width: 12px;
+	height: 15px;
+}
+
+.pinterest_white{
+	background-position: -558px 0;
+	width: 12px;
+	height: 15px;
+}
+
+.rss_gray{
+	background-position: -5px -50px ;
+	width: 15px;
+	height: 15px;
+}
+
+.rss_red{
+	background-position: -55px -50px ;
+	width: 15px;
+	height: 15px;
+}
+
+.rss_white{
+	background-position: -106px -50px ;
+	width: 15px;
+	height: 15px;
+}
+
+.tumblr_gray{
+	background-position: -156px -51px ;
+	width: 10px;
+	height: 15px;
+}
+
+.tumblr_red{
+	background-position: -208px -52px ;
+	width: 10px;
+	height: 15px;
+}
+
+.tumblr_white{
+	background-position: -260px -52px ;
+	width: 10px;
+	height: 15px;
+}
+
+.twitter_gray{
+	background-position: -306px -51px ;
+	width: 14px;
+	height: 13px;
+}
+
+.twitter_red{
+	background-position: -356px -51px ;
+	width: 14px;
+	height: 13px;
+}
+
+.twitter_white{
+	background-position: -407px -52px ;
+	width: 14px;
+	height: 13px;
+}
+
+.arrow{
+	background-position: -460px -53px ;
+	width: 7px;
+	height: 13px;
+}
+
+.check{
+	background-position: -507px -56px ;
+	width: 10px;
+	height: 8px;
+}
+
+.contact_email{
+	background-position: -558px -55px ;
+	width: 12px;
+	height: 9px;
+}
+
+.contact_phone{
+	background-position: -9px -105px ;
+	width: 7px;
+	height: 12px;
+}
+
+.icon-cardiogram{
+	background-position: -52px -87px ;
+	width: 74px;
+	height: 93px;
+}
+
+.icon-drink{
+	background-position: -152px -87px ;
+	width: 74px;
+	height: 93px;
+}
+
+.icon-flag{
+	background-position: -252px -87px ;
+	width: 74px;
+	height: 93px;
+}
+
+.icon-heart{
+	background-position: -351px -86px ;
+	width: 74px;
+	height: 93px;
+}
+
+.icon-like{
+	background-position: -451px -87px ;
+	width: 74px;
+	height: 93px;
+}
+
+.icon-tablet{
+	background-position: -2px -186px ;
+	width: 74px;
+	height: 93px;
+}
+
+.magnifier{
+	background-position: -93px -187px ;
+	width: 42px;
+	height: 42px;
+}
+
+.brand-instagram{
+	background-position: -149px -186px ;
+	width: 136px;
+	height: 44px;
+}
+
+.brand-microsoft{
+	background-position: -295px -192px ;
+	width: 150px;
+	height: 31px;
+}
+
+.brand-shutterstock{
+	background-position: -104px -243px ;
+	width: 169px;
+	height: 25px;
+}
+
+.brand-spotify{
+	background-position: -298px -235px ;
+	width: 131px;
+	height: 40px;
+}
+
+.brand-square{
+	background-position: 0 -289px ;
+	width: 148px;
+	height: 36px;
+}
+
+.twitter_big{
+	background-position: -166px -301px ;
+	width: 24px;
+	height: 20px;
+}
+
