@@ -104,6 +104,25 @@ h3 {
     background-color: #000;
 }
 
+.pricing h3{
+    position: relative;
+    padding-top: 73px;
+    padding-bottom: 4px;
+}
+
+.pricing h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 45px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
 h4 {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -120,6 +139,13 @@ h4 {
     margin-bottom: 2px;
     padding: 11px 0;
 }
+
+.pricing h4{
+    margin-top: 44px;
+    margin-bottom: 33px;
+}
+
+
 
 h5 {
     margin: 0;
@@ -554,6 +580,12 @@ header {
     height: 13px;
 }
 
+.icon__check{
+    background-position: -507px -56px;
+    width: 10px;
+    height: 8px;
+}
+
 .schreffler:hover .information,
 .carrington:hover .information,
 .huffman:hover .information,
@@ -607,7 +639,7 @@ header {
 
 
 .section--gallery {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 }
 
 
@@ -621,6 +653,78 @@ header {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+.pricing{
+    background-color: #e25050;
+    color: #fff;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 57px;
+}
+
+.card{
+    background-color: #d14343;
+    flex-basis: 31.5%;
+    border: 2px solid #d14343;
+}
+
+.card:hover{
+    background-color: #e25050;
+    border: 2px solid #fff;
+}
+
+.cost{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.cost sup{
+    font-size: 14px;
+}
+
+.card__item{
+    margin-top: 36px;
+    padding-left: 0;
+    line-height: 2.3;
+}
+
+.card__item span{
+    margin-right: 15px;
+}
+
+.card button{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    background: #e25050;
+    border: 0;
+    color: #fff;
+    width: 230px;
+    height: 53px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.card button:hover{
+    background-color: #fff;
+    color: #e25050;
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-image: url(../images/background_footer.png);
