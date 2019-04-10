@@ -7,10 +7,6 @@
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
-@font-face {
-    font-family: "MyriadPro-Regular";
-    src: url("/assets/fonts/MyriadPro-Regular.otf") format("opentype")
-}
 
 @font-face {
     font-family: "DroidSerifItalic";
@@ -21,33 +17,44 @@ body {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
+li {
+    list-style-type: none;
 }
 
-h1 {
+a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #c6c6c6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
     font-size: 30px;
     color: #fefefe;
     background-color: #202020;
     opacity: 0.902;
     padding: 10px;
     max-width: 370px;
-    text-align: center;
     margin-top: 0;
     margin-bottom: 2px;
     padding: 10px 0;
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
     font-size: 30px;
     color: #202020;
-    text-align: center;
 }
 
 h2 span {
@@ -55,163 +62,19 @@ h2 span {
 }
 
 h3 {
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
     font-size: 24px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.section--trainers h3 {
-    padding-top: 53px;
-    padding-bottom: 3px;
-    margin-bottom: 60px;
-    position: relative;
-    color: #fff;
-}
-
-.section--trainers h3:before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 45px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-.section--gallery h3 {
-    color: #000;
-    position: relative;
-    margin-top: 74px;
-    padding-bottom: 5px;
-}
-
-.section--gallery h3:before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 45px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: #000;
-}
-
-.pricing h3{
-    position: relative;
-    padding-top: 73px;
-    padding-bottom: 4px;
-}
-
-.pricing h3:before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 45px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: #fff;
 }
 
 h4 {
-    font-family: 'Oswald', sans-serif;
     font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 0;
 }
-
-.heading h4 {
-    color: #fefefe;
-    background-color: #202020;
-    opacity: 0.902;
-    max-width: 260px;
-    margin-bottom: 2px;
-    padding: 11px 0;
-}
-
-.pricing h4{
-    margin-top: 44px;
-    margin-bottom: 33px;
-}
-
-
 
 h5 {
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
     font-size: 14px;
-    text-transform: uppercase;
 }
-
-.trainers h5 {
-    margin: 0;
-    color: #202020;
-    padding-top: 15px;
-    padding-left: 20px;
-}
-
-.gallery h5 {
-    margin-top: 4px;
-    color: #202020;
-}
-
-.contact h5 {
-    color: #fff;
-}
-
-.message h5 {
-    color: #fff;
-    margin-bottom: 28px;
-}
-
-
 
 h6 {
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
     font-size: 12px;
-    text-transform: uppercase;
-
-}
-
-.trainers h6 {
-    margin: 0;
-    color: #afafaf;
-    text-align: left;
-    padding-left: 20px;
-    padding-bottom: 18px;
-}
-
-.gallery h6 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    color: #afafaf;
-    line-height: 2;
-
-}
-
-.heading h6 {
-    color: #fefefe;
-    background-color: #e25050;
-    opacity: 0.902;
-    max-width: 135px;
-    margin-bottom: 2px;
-    padding: 7px;
-}
-
-li {
-    list-style-type: none;
 }
 
 .container {
@@ -228,6 +91,9 @@ li {
 header {
     background-color: #202020;
     color: #fefefe;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -238,25 +104,17 @@ header {
 }
 
 .menu {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
     display: flex;
-    list-style: none;
-    padding: 0;
     margin-top: 31px;
     margin-bottom: 29px;
+    padding: 0;
 }
 
 .menu li {
     margin-left: 20px;
     padding: 10px 12px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #fefefe;
 }
 
 .menu li:hover {
@@ -280,25 +138,37 @@ header {
 
 .phone--number {
     background-color: #e25050;
+    color: #fff;
     padding: 8px 20px;
 }
 
-.phone--number a {
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
-    text-decoration: none;
-}
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    padding-top: 179px;
-    padding-bottom: 211px;
-    margin-left: 7px;
+    padding-top: 177px;
+    padding-bottom: 210px;
+    margin-left: 11px;
+}
+
+.heading h4 {
+    color: #fefefe;
+    background-color: #202020;
+    opacity: 0.902;
+    max-width: 260px;
+    margin-bottom: 2px;
+    padding: 11px 0;
+}
+
+.heading h6 {
+    color: #fefefe;
+    background-color: #e25050;
+    opacity: 0.902;
+    max-width: 135px;
+    margin-bottom: 2px;
+    padding: 7px;
 }
 
 .section--training {
-    padding-top: 25px;
+    padding-top: 152px;
 }
 
 .welcome h2 {
@@ -318,7 +188,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 45px;
-    margin-bottom: 9px;
+    margin-bottom: 16px;
 }
 
 .training h4 {
@@ -337,19 +207,53 @@ header {
     color: #777;
     font-size: 13px;
     line-height: 1.615;
-    margin-top: 22px;
+    margin-top: 20px;
 }
 
 .section--trainers {
     background-image: url(../images/background_trainer.png);
     padding-bottom: 30px;
+    margin-top: 97px;
+}
+
+.section--trainers h3 {
+    padding-top: 53px;
+    padding-bottom: 3px;
+    margin-bottom: 60px;
+    position: relative;
+    color: #fff;
+}
+
+.section--trainers h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 45px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
 .trainers {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
 
+.trainers h5 {
+    color: #202020;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.trainers h6 {
+    color: #afafaf;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 18px;
 }
 
 .trainers div {
@@ -368,11 +272,7 @@ header {
 }
 
 
-.schreffler,
-.carrington,
-.huffman,
-.roger,
-.cameron {
+.trainer {
     position: relative;
 }
 
@@ -383,10 +283,25 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    top: 0;
+    top: 80%;
     background: #fff;
-    display: none;
+    opacity: 0;
 }
+
+
+.trainer:hover .information {
+    opacity: 1;
+    height: 100%;
+    top: 0%;
+    transition: top 200ms linear 10ms;
+}
+
+.information ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 45px 0;
+}
+
 
 .icon {
     display: inline-block;
@@ -580,55 +495,37 @@ header {
     height: 13px;
 }
 
-.icon__check{
+.icon__check {
     background-position: -507px -56px;
     width: 10px;
     height: 8px;
 }
 
-.schreffler:hover .information,
-.carrington:hover .information,
-.huffman:hover .information,
-.roger:hover .information,
-.cameron:hover .information {
-    display: block;
-    height: 100%;
+.icon__magnifier {
+    background-position: -93px -187px;
+    width: 42px;
+    height: 42px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.information ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 45px 45px 0;
-}
-
-
-.information li :hover {
-    color: #e25050;
-}
 
 .gallery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
+}
+
+.gallery h5 {
+    margin-top: 10px;
+    color: #202020;
+    text-align: left;
+}
+
+.gallery h6 {
+    font-weight: 400;
+    color: #afafaf;
+    line-height: 2;
+    text-align: left;
 }
 
 .gallery a {
@@ -639,7 +536,28 @@ header {
 
 
 .section--gallery {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
+    margin-top: 98.18px;
+}
+
+.section--gallery h3 {
+    color: #000;
+    position: relative;
+    padding-top: 74px;
+    padding-bottom: 5px;
+}
+
+.section--gallery h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 45px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #000;
 }
 
 
@@ -654,51 +572,109 @@ header {
     margin-top: 20px;
 }
 
-.pricing{
+.bg-hover {
+    display: flex;
+    position: relative;
+
+}
+
+.bg-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e25050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    ;
+    -moz-transition: all 1s ease;
+    ;
+    -o-transition: all 1s ease;
+    ;
+    transition: all 1s ease;
+}
+
+.gallery a:hover .bg-red {
+    opacity: 0.749;
+}
+
+.pricing {
     background-color: #e25050;
     color: #fff;
     text-align: center;
+    margin-top: 98.18px;
 }
 
-.cards{
+.pricing h3 {
+    position: relative;
+    padding-top: 73px;
+    padding-bottom: 4px;
+}
+
+.pricing h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 45px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.pricing h4 {
+    margin-top: 44px;
+    margin-bottom: 33px;
+}
+
+.cards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-top: 60px;
-    padding-bottom: 57px;
+    padding-bottom: 37px;
 }
 
-.card{
+.card {
     background-color: #d14343;
     flex-basis: 31.5%;
     border: 2px solid #d14343;
+    margin-bottom: 20px;
 }
 
-.card:hover{
+.card:hover {
     background-color: #e25050;
     border: 2px solid #fff;
 }
 
-.cost{
+.cost {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 36px;
 }
 
-.cost sup{
+.cost sup {
     font-size: 14px;
 }
 
-.card__item{
+.card__item {
     margin-top: 36px;
     padding-left: 0;
     line-height: 2.3;
 }
 
-.card__item span{
+.card__item span {
     margin-right: 15px;
 }
 
-.card button{
+.card button {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 18px;
@@ -711,12 +687,17 @@ header {
     margin-bottom: 60px;
 }
 
-.card button:hover{
+
+.card:hover button {
     background-color: #fff;
-    color: #e25050;
+    color: #e25050
 }
 
-
+.card button:hover {
+    /* background-color: #fff;
+    color: #e25050; */
+    cursor: pointer;
+}
 
 
 
@@ -729,6 +710,7 @@ header {
 footer {
     background-image: url(../images/background_footer.png);
     background-position: center;
+    margin-top: 98.18px;
 }
 
 .social {
@@ -789,9 +771,37 @@ footer {
     justify-content: space-between;
 }
 
+.section--partners h3 {
+    position: relative;
+    padding-top: 54px;
+    padding-bottom: 4px;
+}
+
+.section--partners h3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 45px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.section--partners{
+    margin-top: 98.18px;
+}
+
 .contact {
     max-width: 360px;
     margin-right: 20px;
+}
+
+.contact h5 {
+    color: #fff;
+    text-align: left;
 }
 
 .contact p {
@@ -800,32 +810,21 @@ footer {
     font-weight: 300;
     font-size: 12px;
     margin-top: 23px;
+    margin-bottom: 25px;
     line-height: 1.75;
 }
 
-
-
+.contact__phone,
+.contact__email {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
 
 .contact__phone {
-    margin-top: 23px;
-}
-
-.contact__phone a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #c6c6c6;
-    font-size: 12px;
-}
-
-.contact__email {
-    margin-top: 5px;
-}
-
-.contact__email a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #c6c6c6;
-    font-size: 12px;
+    margin-bottom: 4px;
 }
 
 .contact__phone span,
@@ -835,6 +834,11 @@ footer {
 
 .message {
     width: 670px;
+}
+
+.message h5 {
+    color: #fff;
+    margin-bottom: 28px;
 }
 
 .form {
@@ -857,6 +861,8 @@ footer {
     width: calc(33% - 20px);
     padding: 10px;
     letter-spacing: 0.1em;
+    outline: none;
+    -moz-appearance: none;
 }
 
 .form__top input:nth-child(2) {
@@ -878,6 +884,10 @@ footer {
     width: 63%;
     padding: 10px;
     letter-spacing: 0.1em;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    -moz-appearance: none;
 }
 
 .form__submit {
@@ -900,6 +910,7 @@ footer {
     vertical-align: top;
     letter-spacing: 0.06em;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .form__submit span {
@@ -909,14 +920,10 @@ footer {
     color: #707070;
 }
 
-
-
-
 button .icon__arrow {
     float: right;
     padding-right: 15px;
     margin-top: 4px;
-
 }
 
 .copyright {
@@ -930,10 +937,10 @@ button .icon__arrow {
 
 .copyright p {
     color: #707070;
-
 }
 
 .copyright a {
+    cursor: pointer;
     color: #e25050;
     margin-top: 16px;
     text-decoration: underline;
@@ -944,11 +951,11 @@ button .icon__arrow {
 
 
 @media (max-width: 1200px) {
-    .trainers{
+    .trainers {
         justify-content: space-evenly;
     }
 
-    .gallery{
+    .gallery {
         justify-content: space-evenly;
     }
 
@@ -979,7 +986,6 @@ button .icon__arrow {
 
     .logo {
         padding-top: 20px;
-        padding-bottom: 20px;
     }
 
     .menu {
@@ -1025,29 +1031,30 @@ button .icon__arrow {
         text-align: center;
     }
 
-    .container--flex{
+    .container--flex {
         flex-direction: column;
     }
 
-    .logo{
+    .logo {
         text-align: center;
     }
 
-    .menu{
+    .menu {
         margin-top: 0;
         justify-content: inherit;
     }
 
-    .menu li{
+    .menu li {
         margin-left: 0;
     }
 
-    .training div{
+    .training div {
         flex-basis: 48%;
     }
 
-
-
+    .card {
+        flex-basis: 45%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1087,22 +1094,22 @@ button .icon__arrow {
         text-align: center;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
-    h1{
+    h1 {
         font-size: 21px;
         text-align: left;
         padding-left: 22px;
     }
 
-    .heading h6{
+    .heading h6 {
         padding-left: 22px;
         text-align: left;
     }
 
-    .heading h4{
+    .heading h4 {
         font-size: 16px;
         text-align: left;
         padding-left: 22px;
@@ -1111,4 +1118,64 @@ button .icon__arrow {
     .training div {
         flex-basis: 100%;
     }
+
+    .card {
+        flex-basis: 85%;
+    }
 }
+
+#features {
+    margin-top: -99.18px;
+    display: flex;
+    position: relative;
+}
+
+#our-team {
+    margin-top: -99.18px;
+    display: flex;
+    position: relative;
+}
+
+#gallery {
+    margin-top: -99.18px;
+    display: flex;
+    position: relative;
+}
+
+#pricing {
+    margin-top: -99.18px;
+    display: flex;
+    position: relative;
+}
+
+#partners {
+    margin-top: -99.18px;
+    display: flex;
+    position: relative;
+}
+
+#contact {
+    margin-top: -99.18px;
+    display: flex;
+    position: relative;
+}
+
+
+
+/* #features::before {
+    border-top: 100px solid transparent;
+    margin-top: -100px;
+    padding: 15px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: block;
+    position: fixed;
+    content: " ";
+    margin-top: -100px;
+    height: 50px;
+} */
+
+
+
+/* 1171 */
