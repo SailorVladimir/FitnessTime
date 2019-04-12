@@ -245,6 +245,7 @@ header {
 
 .trainers h5 {
     color: #202020;
+    text-align: left;
     padding-top: 15px;
     padding-left: 20px;
 }
@@ -292,7 +293,7 @@ header {
 .trainer:hover .information {
     opacity: 1;
     height: 100%;
-    top: 0%;
+    top: 0;
     transition: top 200ms linear 10ms;
 }
 
@@ -533,8 +534,6 @@ header {
     margin-bottom: 28px;
 }
 
-
-
 .section--gallery {
     margin-bottom: 47px;
     margin-top: 98.18px;
@@ -699,14 +698,6 @@ header {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
 footer {
     background-image: url(../images/background_footer.png);
     background-position: center;
@@ -790,7 +781,7 @@ footer {
     background-color: #000;
 }
 
-.section--partners{
+.section--partners {
     margin-top: 98.18px;
 }
 
@@ -1096,6 +1087,10 @@ button .icon__arrow {
 
     .menu {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: all 2s ease;
     }
 
     h1 {
@@ -1122,6 +1117,18 @@ button .icon__arrow {
     .card {
         flex-basis: 85%;
     }
+
+    .container--flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header #menuToggle {
+        display: flex;
+    }
+
+
+
 }
 
 #features {
@@ -1158,6 +1165,68 @@ button .icon__arrow {
     margin-top: -99.18px;
     display: flex;
     position: relative;
+}
+
+
+
+
+#menuToggle {
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    display: none;
+}
+
+#menuToggle input {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    /* hide input */
+    z-index: 1;
+    /* top of the menu */
+}
+
+
+
+
+#menuToggle span {
+    width: 55px;
+    height: 8px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    -moz-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    -ms-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    -o-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    transition: all .5s cubic-bezier(.08, .81, .87, .71);
+}
+
+#span1 {
+    transform-origin: 4px 0px;
+}
+
+#span3 {
+    transform-origin: bottom right;
+}
+
+#menuToggle input:checked~#span1 {
+    background-color: #fff;
+    transform: rotate(45deg) translate(8px);
+}
+
+#menuToggle input:checked~#span2 {
+    background-color: #fff;
+    transform: rotate(495deg) translate(4px);
+}
+
+#menuToggle input:checked~#span3 {
+    background-color: #fff;
+    transform: rotate(45deg);
+    opacity: 0;
 }
 
 

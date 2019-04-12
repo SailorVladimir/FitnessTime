@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
-<body>
+<body id="body">
 
     <header id="home">
         <div class="container container--flex">
             <div class="logo">FitnessTime</div>
+
+            <div id="menuToggle">
+                <input class="menuToggle" type="checkbox" />
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+            
 
             <ul class="menu">
                 <li><a href="#home">home</a></li>
@@ -24,6 +32,8 @@
                 <li><a href="#partners">partners</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
+
+
         </div>
     </header>
 
@@ -292,7 +302,7 @@
     </section>
 
     <div id="gallery"></div>
-    <section  class="section section--gallery">
+    <section class="section section--gallery">
         <div class="container">
             <h3>our gallery</h3>
             <p>Praesent posuere eros in quam dictum, quis dignissim odio suscipit. Integer luctus mi sit amet
@@ -572,7 +582,7 @@
 
             <div class="copyright">
                 <p>© 2013. All rights reserved. Designed by PSD Booster.</p>
-                <a id="top">Back to top</a>
+                <a id="backToTop">Back to top</a>
             </div>
         </div>
     </footer>
