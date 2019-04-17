@@ -93,7 +93,7 @@ header {
     color: #fefefe;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .logo {
@@ -121,9 +121,40 @@ header {
     background-color: #e25050;
 }
 
-.section--slide {
+.container--subject {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+}
+
+.slider__img1 {
+    background-image: url(../images/slide1.png);
+    height: 581px;
+    background-position: 50% 50%;
+}
+
+.slider__img2 {
     background-image: url(../images/slide2.png);
-    background-position: center;
+    height: 581px;
+    background-position: 50% 50%;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 109px;
+    z-index: 1;
+
+}
+
+.slider .slick-arrow.slick-next {
+    right: 109px;
+}
+
+.slider .slick-arrow.slick-prev:before,
+.slider .slick-arrow.slick-next:before {
+    font-size: 40px;
+    color: #202020;
+    line-height: 1;
 }
 
 .phone {
@@ -766,6 +797,29 @@ footer {
     position: relative;
     padding-top: 54px;
     padding-bottom: 4px;
+    margin-bottom: 70px;
+}
+
+.slider--partners {
+    margin-bottom: 76px;
+}
+
+.slider--partners .slick-list {
+    text-align: -webkit-center;
+}
+
+.slider--partners .slick-arrow.slick-prev {
+    left: 0;
+}
+
+.slider--partners .slick-arrow.slick-next {
+    right: 0;
+}
+
+.slider--partners .slick-prev:before,
+.slider--partners .slick-next:before {
+
+    color: #959595;
 }
 
 .section--partners h3:before {
@@ -992,6 +1046,10 @@ button .icon__arrow {
 
 @media (max-width: 768px) {
 
+    .phone {
+        justify-content: flex-start;
+    }
+
     .social {
         flex-direction: column;
         margin-bottom: 40px;
@@ -1179,8 +1237,8 @@ button .icon__arrow {
 }
 
 #menuToggle input {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
@@ -1193,9 +1251,9 @@ button .icon__arrow {
 
 
 #menuToggle span {
-    width: 55px;
-    height: 8px;
-    margin-bottom: 10px;
+    width: 40px;
+    height: 4px;
+    margin-bottom: 5px;
     background: #fff;
     border-radius: 4px;
     -webkit-transition: all .5s cubic-bezier(.08, .81, .87, .71);
@@ -1215,7 +1273,7 @@ button .icon__arrow {
 
 #menuToggle input:checked~#span1 {
     background-color: #fff;
-    transform: rotate(45deg) translate(8px);
+    transform: rotate(43deg) translate(4px);
 }
 
 #menuToggle input:checked~#span2 {
@@ -1225,7 +1283,7 @@ button .icon__arrow {
 
 #menuToggle input:checked~#span3 {
     background-color: #fff;
-    transform: rotate(45deg);
+    transform: rotate(43deg);
     opacity: 0;
 }
 

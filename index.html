@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FitnessTime</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/js/slick/slick.css">
+    <link rel="stylesheet" href="assets/js/slick/slick-theme.css">
 </head>
 
 <body id="body">
@@ -21,7 +23,7 @@
                 <span id="span2"></span>
                 <span id="span3"></span>
             </div>
-            
+
 
             <ul class="menu">
                 <li><a href="#home">home</a></li>
@@ -38,18 +40,22 @@
     </header>
 
     <section class="section--slide">
-        <div class="container">
+        <div class="container container--subject">
             <a class="phone" href="tel:+18005551234">
                 <div class="phone--icon"><img src="./assets/images/phone-number.png" alt="phone"></div>
                 <div class="phone--number">1-800-555-1234</div>
             </a>
-
             <div class="heading">
                 <h6>landing page template</h6>
                 <h1>perfect fitness solution</h1>
                 <h4>best choise for your site</h4>
             </div>
         </div>
+        <div class="slider">
+            <div class="slider__img1"></div>
+            <div class="slider__img2"></div>
+        </div>
+
     </section>
 
     <div id="features"></div>
@@ -521,6 +527,23 @@
     <section class="section--partners">
         <div class="container">
             <h3>Partners</h3>
+            <div class="slider--partners">
+                <div class="slider__img--partners">
+                    <img src="assets/images/brand-spotify.png" alt="">
+                </div>
+                <div class="slider__img--partners">
+                    <img src="assets/images/brand-microsoft.png" alt="">
+                </div>
+                <div class="slider__img--partners">
+                    <img src="assets/images/brand-instagram.png" alt="">
+                </div>
+                <div class="slider__img--partners">
+                    <img src="assets/images/brand-shutterstock.png" alt="">
+                </div>
+                <div class="slider__img--partners">
+                    <img src="assets/images/brand-square.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -562,16 +585,18 @@
                 </div>
                 <div class="message">
                     <h5>send us a message</h5>
-                    <form class="form" action="">
+                    <form class="form" id="form" name="form" action="" novalidate>
                         <div class="form__top">
-                            <input type="text" name="name" placeholder="your name">
-                            <input type="email" name="email" placeholder="email address">
+                            <input class="form__name" id="form__name" type="text" name="name" placeholder="your name"
+                                required>
+                            <input class="form__email" id="form__email" type="email" name="email"
+                                placeholder="email address" required>
                             <input type="text" placeholder="subject">
                         </div>
                         <div class="form__bottom">
                             <textarea name="massage" cols="30" rows="5" placeholder="your massage"></textarea>
                             <div class="form__submit">
-                                <button type="submit">Submit your message <span
+                                <button type="button" onclick="valid(document.getElementById('form'))">Submit your message <span
                                         class="icon icon__arrow"></span></button>
                                 <span>Make sure you put a valid email.</span>
                             </div>
@@ -587,9 +612,9 @@
         </div>
     </footer>
 
-
-
-    <script src="./main.js"></script>
+    <script src="assets/js/jQuery v3.4.0.js"></script>
+    <script src="assets/js/slick/slick.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
