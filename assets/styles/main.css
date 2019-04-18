@@ -142,12 +142,15 @@ header {
 
 .slider .slick-arrow.slick-prev {
     left: 109px;
-    z-index: 1;
+    z-index: 11;
+    top: 70%;
 
 }
 
 .slider .slick-arrow.slick-next {
     right: 109px;
+    z-index: 11;
+    top: 70%;
 }
 
 .slider .slick-arrow.slick-prev:before,
@@ -199,7 +202,7 @@ header {
 }
 
 .section--training {
-    padding-top: 152px;
+    padding-top: 146px;
 }
 
 .welcome h2 {
@@ -219,7 +222,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 34px;
 }
 
 .training h4 {
@@ -289,7 +292,6 @@ header {
 }
 
 .trainers div {
-    flex-basis: 23%;
     background-color: #fff;
     margin-bottom: 30px;
 }
@@ -306,6 +308,7 @@ header {
 
 .trainer {
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -548,9 +551,10 @@ header {
 }
 
 .gallery h5 {
-    margin-top: 10px;
+    margin-top: 7px;
     color: #202020;
     text-align: left;
+    text-transform: none;
 }
 
 .gallery h6 {
@@ -558,6 +562,7 @@ header {
     color: #afafaf;
     line-height: 2;
     text-align: left;
+    text-transform: none;
 }
 
 .gallery a {
@@ -566,7 +571,7 @@ header {
 }
 
 .section--gallery {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
     margin-top: 98.18px;
 }
 
@@ -669,7 +674,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 60px;
-    padding-bottom: 37px;
+    padding-bottom: 41px;
 }
 
 .card {
@@ -801,7 +806,7 @@ footer {
 }
 
 .slider--partners {
-    margin-bottom: 76px;
+    margin-bottom: 73px;
 }
 
 .slider--partners .slick-list {
@@ -810,10 +815,12 @@ footer {
 
 .slider--partners .slick-arrow.slick-prev {
     left: 0;
+    z-index: 1;
 }
 
 .slider--partners .slick-arrow.slick-next {
     right: 0;
+    z-index: 1;
 }
 
 .slider--partners .slick-prev:before,
@@ -976,8 +983,8 @@ button .icon__arrow {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    margin-top: 78px;
-    padding-bottom: 27px;
+    margin-top: 95px;
+    padding-bottom: 28px;
 }
 
 .copyright p {
@@ -988,6 +995,7 @@ button .icon__arrow {
     cursor: pointer;
     color: #e25050;
     margin-top: 16px;
+    margin-right: 13px;
     text-decoration: underline;
 }
 
@@ -1143,12 +1151,21 @@ button .icon__arrow {
         text-align: center;
     }
 
+    .logo{
+        padding-bottom: 10px;
+    }
+
     .menu {
         display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
         transition: all 2s ease;
+    }
+
+    .menu li{
+        font-size: 20px;
+        padding: 6px;
     }
 
     h1 {
@@ -1189,41 +1206,35 @@ button .icon__arrow {
 
 }
 
-#features {
+/* #features {
     margin-top: -99.18px;
-    display: flex;
     position: relative;
 }
 
 #our-team {
     margin-top: -99.18px;
-    display: flex;
     position: relative;
 }
 
 #gallery {
     margin-top: -99.18px;
-    display: flex;
     position: relative;
 }
 
 #pricing {
     margin-top: -99.18px;
-    display: flex;
     position: relative;
 }
 
 #partners {
     margin-top: -99.18px;
-    display: flex;
     position: relative;
 }
 
 #contact {
     margin-top: -99.18px;
-    display: flex;
     position: relative;
-}
+} */
 
 
 
@@ -1237,8 +1248,8 @@ button .icon__arrow {
 }
 
 #menuToggle input {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
@@ -1278,7 +1289,7 @@ button .icon__arrow {
 
 #menuToggle input:checked~#span2 {
     background-color: #fff;
-    transform: rotate(495deg) translate(4px);
+    transform: rotate(495deg) translate(5px);
 }
 
 #menuToggle input:checked~#span3 {

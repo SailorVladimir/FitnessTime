@@ -1,29 +1,57 @@
 //Плавный скролл backToTop
 
-window.onload = function () {
-    var scrolled;
+// window.onload = function () {
+//     var scrolled;
+//     var timer;
+
+//     document.getElementById('backToTop').onclick = function () {
+//         scrolled = window.pageYOffset;
+//         scrollToId('body');
+//     }
+
+
+//     function scrollToId(targetId) {
+//         const target = document.getElementById(targetId)
+//         if (scrolled > target.offsetTop) {
+//             window.scrollTo(target.offsetTop, scrolled);
+//             scrolled = scrolled - 100;
+//             timer = setTimeout(() => {
+//                 scrollToId(targetId)
+//             }, 10);
+
+//         } else {
+//             clearTimeout(timer);
+//             window.scrollTo(0, 0);
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+function scrollToId(targetId) {
     var timer;
+    const target = document.getElementById(targetId);
 
-    document.getElementById('backToTop').onclick = function () {
-        scrolled = window.pageYOffset;
-        scrollToId('body');
-    }
-
-    function scrollToId(targetId) {
-        const target = document.getElementById(targetId)
-        if (scrolled > target.offsetTop) {
-            window.scrollTo(target.offsetTop, scrolled);
-            scrolled = scrolled - 100;
-            timer = setTimeout(() => {
-                scrollToId(targetId)
-            }, 10);
-
-        } else {
-            clearTimeout(timer);
-            window.scrollTo(0, 0);
-        }
+    if (window.pageYOffset > target.offsetTop) {
+        window.scrollTo(target.offsetTop, window.pageYOffset - 100);
+        timer = setTimeout(() => {
+            scrollToId(targetId)
+        }, 10);
+    } else if (window.pageYOffset < target.offsetTop) {
+        window.scrollTo(target.offsetTop, window.pageYOffset + 100);
+        timer = setTimeout(() => {
+            scrollToId(targetId)
+        }, 10);
+    } else {
+        clearTimeout(timer);
+        window.scrollTo(0, 0);
     }
 }
+
 
 //Бургер меню
 
@@ -44,6 +72,7 @@ $('.slider').slick({
     autoplaySpeed: 5000,
     fade: true,
     zindex: 0,
+    dots: true,
     responsive: [{
         breakpoint: 992,
         settings: {
@@ -57,6 +86,7 @@ $('.slider--partners').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    dots: true,
     responsive: [{
             breakpoint: 992,
             settings: {
@@ -87,6 +117,7 @@ function valid(form) {
     var name = form.name.value;
     var email = form.email.value;
     var adr_pattern = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i;
+    var massage = form.massage.value;
 
     if (name == 0)
         fail = "Вы не ввели свое имя";
@@ -96,7 +127,12 @@ function valid(form) {
 
     else if (adr_pattern.test(email) == false)
         fail = "Вы ввели email не правильно"
-        
+
+    else if (massage == false)
+        fail = "Введите своё сообщение"
+
     if (fail)
         alert(fail);
+
+    else alert("Ваше сообщение отправленно")
 }

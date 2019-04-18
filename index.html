@@ -26,13 +26,13 @@
 
 
             <ul class="menu">
-                <li><a href="#home">home</a></li>
-                <li><a href="#features">features</a></li>
-                <li><a href="#our-team">our team</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#pricing">pricing</a></li>
-                <li><a href="#partners">partners</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a id="home" onclick="scrollToId('body')">home</a></li>
+                <li><a id="features" onclick="scrollToId('section__features')">features</a></li>
+                <li><a id="our-team" onclick="scrollToId('section__our-team')">our team</a></li>
+                <li><a id="gallery" onclick="scrollToId('section__gallery')">gallery</a></li>
+                <li><a id="pricing" onclick="scrollToId('section__pricing')">pricing</a></li>
+                <li><a id="partners" onclick="scrollToId('section__partners')">partners</a></li>
+                <li><a id="contact" onclick="scrollToId('section__contact')">contact</a></li>
             </ul>
 
 
@@ -58,7 +58,7 @@
 
     </section>
 
-    <div id="features"></div>
+    <div id="section__features"></div>
     <section class="section section--training">
         <div class="container">
             <div class="welcome">
@@ -130,7 +130,7 @@
         </div>
     </section>
 
-    <div id="our-team"></div>
+    <div id="section__our-team"></div>
     <section class="section section--trainers">
         <div class="container">
             <h3>super trainers</h3>
@@ -307,7 +307,7 @@
         </div>
     </section>
 
-    <div id="gallery"></div>
+    <div id="section__gallery"></div>
     <section class="section section--gallery">
         <div class="container">
             <h3>our gallery</h3>
@@ -478,7 +478,7 @@
         </div>
     </section>
 
-    <div id="pricing"></div>
+    <div id="section__pricing"></div>
     <section class="pricing">
         <div class="container">
             <h3>PRicing and plans</h3>
@@ -523,7 +523,7 @@
         </div>
     </section>
 
-    <div id="partners"></div>
+    <div id="section__partners"></div>
     <section class="section--partners">
         <div class="container">
             <h3>Partners</h3>
@@ -547,7 +547,7 @@
         </div>
     </section>
 
-    <div id="contact"></div>
+    <div id="section__contact"></div>
     <footer>
         <div class="container">
             <div class="social">
@@ -596,8 +596,8 @@
                         <div class="form__bottom">
                             <textarea name="massage" cols="30" rows="5" placeholder="your massage"></textarea>
                             <div class="form__submit">
-                                <button type="button" onclick="valid(document.getElementById('form'))">Submit your message <span
-                                        class="icon icon__arrow"></span></button>
+                                <button type="button" onclick="valid(document.getElementById('form'))">Submit your
+                                    message <span class="icon icon__arrow"></span></button>
                                 <span>Make sure you put a valid email.</span>
                             </div>
                         </div>
@@ -607,7 +607,7 @@
 
             <div class="copyright">
                 <p>© 2013. All rights reserved. Designed by PSD Booster.</p>
-                <a id="backToTop">Back to top</a>
+                <a id="backToTop" onclick="scrollToId('body')">Back to top</a>
             </div>
         </div>
     </footer>
