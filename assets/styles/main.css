@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:800');
 
-/* font-family: 'Raleway', sans-serif; */
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700');
-
-/* font-family: 'Oswald', sans-serif;
-font-family: 'Open Sans', sans-serif; */
-
 
 @font-face {
     font-family: "DroidSerifItalic";
@@ -121,6 +115,67 @@ header {
     background-color: #e25050;
 }
 
+/************************************* Hamburger Menu Start ***********************************************/
+
+#menuToggle {
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    display: none;
+}
+
+#menuToggle input {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    /* hide input */
+    z-index: 1;
+    /* top of the menu */
+}
+
+#menuToggle span {
+    width: 40px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    -moz-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    -ms-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    -o-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+    transition: all .5s cubic-bezier(.08, .81, .87, .71);
+}
+
+#span1 {
+    transform-origin: 4px 0px;
+}
+
+#span3 {
+    transform-origin: bottom right;
+}
+
+#menuToggle input:checked~#span1 {
+    background-color: #fff;
+    transform: rotate(43deg) translate(4px);
+}
+
+#menuToggle input:checked~#span2 {
+    background-color: #fff;
+    transform: rotate(495deg) translate(5px);
+}
+
+#menuToggle input:checked~#span3 {
+    background-color: #fff;
+    transform: rotate(43deg);
+    opacity: 0;
+}
+
+/************************************* Hamburger Menu Finish **********************************************/
+
+
 .container--subject {
     position: absolute;
     z-index: 2;
@@ -144,7 +199,6 @@ header {
     left: 109px;
     z-index: 11;
     top: 70%;
-
 }
 
 .slider .slick-arrow.slick-next {
@@ -176,7 +230,6 @@ header {
     padding: 8px 20px;
 }
 
-
 .heading {
     padding-top: 177px;
     padding-bottom: 210px;
@@ -202,7 +255,7 @@ header {
 }
 
 .section--training {
-    padding-top: 146px;
+    padding-top: 16px;
 }
 
 .welcome h2 {
@@ -222,7 +275,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 45px;
-    margin-bottom: 34px;
+    margin-bottom: 6px;
 }
 
 .training h4 {
@@ -233,7 +286,7 @@ header {
 .training div {
     flex-basis: 32%;
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 58px;
 }
 
 .training p {
@@ -247,7 +300,6 @@ header {
 .section--trainers {
     background-image: url(../images/background_trainer.png);
     padding-bottom: 30px;
-    margin-top: 97px;
 }
 
 .section--trainers h3 {
@@ -305,13 +357,10 @@ header {
     padding-right: 20px;
 }
 
-
 .trainer {
     position: relative;
     overflow: hidden;
 }
-
-
 
 .information {
     position: absolute;
@@ -322,7 +371,6 @@ header {
     background: #fff;
     opacity: 0;
 }
-
 
 .trainer:hover .information {
     opacity: 1;
@@ -337,6 +385,7 @@ header {
     padding: 45px 45px 0;
 }
 
+/********************************************** Sprite start *******************************************/
 
 .icon {
     display: inline-block;
@@ -542,12 +591,13 @@ header {
     height: 42px;
 }
 
+/********************************************** Sprite finish *******************************************/
 
 .gallery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 58px;
 }
 
 .gallery h5 {
@@ -572,7 +622,6 @@ header {
 
 .section--gallery {
     margin-bottom: 48px;
-    margin-top: 98.18px;
 }
 
 .section--gallery h3 {
@@ -595,7 +644,6 @@ header {
     background-color: #000;
 }
 
-
 .section--gallery p {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -610,7 +658,6 @@ header {
 .bg-hover {
     display: flex;
     position: relative;
-
 }
 
 .bg-red {
@@ -642,7 +689,6 @@ header {
     background-color: #e25050;
     color: #fff;
     text-align: center;
-    margin-top: 98.18px;
 }
 
 .pricing h3 {
@@ -722,7 +768,6 @@ header {
     margin-bottom: 60px;
 }
 
-
 .card:hover button {
     background-color: #fff;
     color: #e25050
@@ -737,7 +782,6 @@ header {
 footer {
     background-image: url(../images/background_footer.png);
     background-position: center;
-    margin-top: 98.18px;
 }
 
 .social {
@@ -798,6 +842,10 @@ footer {
     justify-content: space-between;
 }
 
+.section--partners{
+    margin-bottom: 68px;
+}
+
 .section--partners h3 {
     position: relative;
     padding-top: 54px;
@@ -840,10 +888,6 @@ footer {
     height: 1px;
     margin: 0 auto;
     background-color: #000;
-}
-
-.section--partners {
-    margin-top: 98.18px;
 }
 
 .contact {
@@ -999,9 +1043,7 @@ button .icon__arrow {
     text-decoration: underline;
 }
 
-
-/************************************************************media*************************************************************************/
-
+/***********************************************media*****************************************/
 
 @media (max-width: 1200px) {
     .trainers {
@@ -1011,7 +1053,6 @@ button .icon__arrow {
     .gallery {
         justify-content: space-evenly;
     }
-
 }
 
 @media (max-width: 992px) {
@@ -1143,8 +1184,6 @@ button .icon__arrow {
         margin-bottom: 40px;
     }
 
-    .form__bottom textarea {}
-
     .copyright {
         margin-top: 0;
         flex-direction: column;
@@ -1201,119 +1240,4 @@ button .icon__arrow {
     header #menuToggle {
         display: flex;
     }
-
-
-
 }
-
-/* #features {
-    margin-top: -99.18px;
-    position: relative;
-}
-
-#our-team {
-    margin-top: -99.18px;
-    position: relative;
-}
-
-#gallery {
-    margin-top: -99.18px;
-    position: relative;
-}
-
-#pricing {
-    margin-top: -99.18px;
-    position: relative;
-}
-
-#partners {
-    margin-top: -99.18px;
-    position: relative;
-}
-
-#contact {
-    margin-top: -99.18px;
-    position: relative;
-} */
-
-
-
-
-#menuToggle {
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 10px;
-    display: none;
-}
-
-#menuToggle input {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    /* hide input */
-    z-index: 1;
-    /* top of the menu */
-}
-
-
-
-
-#menuToggle span {
-    width: 40px;
-    height: 4px;
-    margin-bottom: 5px;
-    background: #fff;
-    border-radius: 4px;
-    -webkit-transition: all .5s cubic-bezier(.08, .81, .87, .71);
-    -moz-transition: all .5s cubic-bezier(.08, .81, .87, .71);
-    -ms-transition: all .5s cubic-bezier(.08, .81, .87, .71);
-    -o-transition: all .5s cubic-bezier(.08, .81, .87, .71);
-    transition: all .5s cubic-bezier(.08, .81, .87, .71);
-}
-
-#span1 {
-    transform-origin: 4px 0px;
-}
-
-#span3 {
-    transform-origin: bottom right;
-}
-
-#menuToggle input:checked~#span1 {
-    background-color: #fff;
-    transform: rotate(43deg) translate(4px);
-}
-
-#menuToggle input:checked~#span2 {
-    background-color: #fff;
-    transform: rotate(495deg) translate(5px);
-}
-
-#menuToggle input:checked~#span3 {
-    background-color: #fff;
-    transform: rotate(43deg);
-    opacity: 0;
-}
-
-
-
-/* #features::before {
-    border-top: 100px solid transparent;
-    margin-top: -100px;
-    padding: 15px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    display: block;
-    position: fixed;
-    content: " ";
-    margin-top: -100px;
-    height: 50px;
-} */
-
-
-
-/* 1171 */

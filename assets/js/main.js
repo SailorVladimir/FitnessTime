@@ -1,59 +1,29 @@
-//Плавный скролл backToTop
+// Плавный скролл
 
-// window.onload = function () {
-//     var scrolled;
-//     var timer;
-
-//     document.getElementById('backToTop').onclick = function () {
-//         scrolled = window.pageYOffset;
-//         scrollToId('body');
-//     }
-
-
-//     function scrollToId(targetId) {
-//         const target = document.getElementById(targetId)
-//         if (scrolled > target.offsetTop) {
-//             window.scrollTo(target.offsetTop, scrolled);
-//             scrolled = scrolled - 100;
-//             timer = setTimeout(() => {
-//                 scrollToId(targetId)
-//             }, 10);
-
-//         } else {
-//             clearTimeout(timer);
-//             window.scrollTo(0, 0);
-//         }
-//     }
-// }
-
-
-
-
-
-
+var timer;
 
 function scrollToId(targetId) {
-    var timer;
     const target = document.getElementById(targetId);
-
-    if (window.pageYOffset > target.offsetTop) {
-        window.scrollTo(target.offsetTop, window.pageYOffset - 100);
-        timer = setTimeout(() => {
-            scrollToId(targetId)
-        }, 10);
-    } else if (window.pageYOffset < target.offsetTop) {
-        window.scrollTo(target.offsetTop, window.pageYOffset + 100);
+    let targetPosition = target.offsetTop - 100 > 0 ? target.offsetTop - 100 : 0;
+    if (window.pageYOffset !== targetPosition && window.pageYOffset + window.innerHeight != document.body.clientHeight) {
+        let step = 100;
+        if (Math.abs(window.pageYOffset - targetPosition) < step) {
+            step = Math.abs(window.pageYOffset - targetPosition);
+        }
+        if (window.pageYOffset > targetPosition) {
+            step *= -1;
+        }
+        window.scrollTo(targetPosition, window.pageYOffset + step);
         timer = setTimeout(() => {
             scrollToId(targetId)
         }, 10);
     } else {
-        clearTimeout(timer);
-        window.scrollTo(0, 0);
+        timer && clearTimeout(timer);
     }
 }
 
 
-//Бургер меню
+// Бургер меню
 
 document.querySelector('.menuToggle').onclick = function () {
     display = document.querySelector('.menu').style.display;
@@ -65,7 +35,7 @@ document.querySelector('.menuToggle').onclick = function () {
     }
 }
 
-//Слайдеры
+// Слайдеры
 
 $('.slider').slick({
     autoplay: true,
@@ -110,7 +80,7 @@ $('.slider--partners').slick({
     ]
 });
 
-//Валидация формы
+// Валидация формы
 
 function valid(form) {
     var fail = false;

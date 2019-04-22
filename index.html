@@ -15,7 +15,7 @@
 
     <header id="home">
         <div class="container container--flex">
-            <div class="logo">FitnessTime</div>
+            <a class="logo" href="#">FitnessTime</a>
 
             <div id="menuToggle">
                 <input class="menuToggle" type="checkbox" />
@@ -26,13 +26,15 @@
 
 
             <ul class="menu">
-                <li><a id="home" onclick="scrollToId('body')">home</a></li>
-                <li><a id="features" onclick="scrollToId('section__features')">features</a></li>
-                <li><a id="our-team" onclick="scrollToId('section__our-team')">our team</a></li>
-                <li><a id="gallery" onclick="scrollToId('section__gallery')">gallery</a></li>
-                <li><a id="pricing" onclick="scrollToId('section__pricing')">pricing</a></li>
-                <li><a id="partners" onclick="scrollToId('section__partners')">partners</a></li>
-                <li><a id="contact" onclick="scrollToId('section__contact')">contact</a></li>
+                <li><a href="home" onclick="event.preventDefault(); scrollToId('body')">home</a></li>
+                <li><a href="features" onclick="event.preventDefault(); scrollToId('features')">features</a></li>
+                <li><a href="our-team" onclick="event.preventDefault(); scrollToId('our-team')">our team</a>
+                </li>
+                <li><a href="gallery" onclick="event.preventDefault(); scrollToId('gallery')">gallery</a></li>
+                <li><a href="pricing" onclick="event.preventDefault(); scrollToId('pricing')">pricing</a></li>
+                <li><a href="partners" onclick="event.preventDefault(); scrollToId('partners')">partners</a>
+                </li>
+                <li><a href="contact" onclick="event.preventDefault(); scrollToId('contact')">contact</a></li>
             </ul>
 
 
@@ -58,8 +60,8 @@
 
     </section>
 
-    <div id="section__features"></div>
-    <section class="section section--training">
+    
+    <section id="features" class="section section--training">
         <div class="container">
             <div class="welcome">
                 <h2>Welcome to Fitness <span>Time!</span></h2>
@@ -130,8 +132,8 @@
         </div>
     </section>
 
-    <div id="section__our-team"></div>
-    <section class="section section--trainers">
+    
+    <section id="our-team" class="section section--trainers">
         <div class="container">
             <h3>super trainers</h3>
             <div class="trainers">
@@ -307,8 +309,8 @@
         </div>
     </section>
 
-    <div id="section__gallery"></div>
-    <section class="section section--gallery">
+
+    <section id="gallery" class="section section--gallery">
         <div class="container">
             <h3>our gallery</h3>
             <p>Praesent posuere eros in quam dictum, quis dignissim odio suscipit. Integer luctus mi sit amet
@@ -478,8 +480,8 @@
         </div>
     </section>
 
-    <div id="section__pricing"></div>
-    <section class="pricing">
+    
+    <section id="pricing" class="pricing">
         <div class="container">
             <h3>PRicing and plans</h3>
             <div class="cards">
@@ -523,8 +525,8 @@
         </div>
     </section>
 
-    <div id="section__partners"></div>
-    <section class="section--partners">
+    
+    <section id="partners" class="section--partners">
         <div class="container">
             <h3>Partners</h3>
             <div class="slider--partners">
@@ -547,8 +549,8 @@
         </div>
     </section>
 
-    <div id="section__contact"></div>
-    <footer>
+
+    <footer id="contact">
         <div class="container">
             <div class="social">
                 <div class="small-startups">
@@ -585,7 +587,7 @@
                 </div>
                 <div class="message">
                     <h5>send us a message</h5>
-                    <form class="form" id="form" name="form" action="" novalidate>
+                    <form class="form" id="form" name="form" novalidate>
                         <div class="form__top">
                             <input class="form__name" id="form__name" type="text" name="name" placeholder="your name"
                                 required>
@@ -607,12 +609,12 @@
 
             <div class="copyright">
                 <p>© 2013. All rights reserved. Designed by PSD Booster.</p>
-                <a id="backToTop" onclick="scrollToId('body')">Back to top</a>
+                <a href="backToTop" onclick="event.preventDefault(); scrollToId('body')">Back to top</a>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/jQuery v3.4.0.js"></script>
+    <script src="assets/js/jQuery-v3.4.0.js"></script>
     <script src="assets/js/slick/slick.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
