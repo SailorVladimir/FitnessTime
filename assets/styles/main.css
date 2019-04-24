@@ -183,16 +183,26 @@ header {
     right: 0;
 }
 
-.slider__img1 {
-    background-image: url(../images/slide1.png);
+.slider .slick-slide {
     height: 581px;
+}
+
+.slider__img1 {
+    background-image: url(../images/slide2.png);
     background-position: 50% 50%;
 }
 
 .slider__img2 {
-    background-image: url(../images/slide2.png);
-    height: 581px;
+    background-image: url(../images/slide1.png);
     background-position: 50% 50%;
+}
+
+.slider .slick-prev:before {
+    content: url(../images/button-left.png);
+}
+
+.slider .slick-next:before {
+    content: url(../images/button-right.png);
 }
 
 .slider .slick-arrow.slick-prev {
@@ -842,7 +852,7 @@ footer {
     justify-content: space-between;
 }
 
-.section--partners{
+.section--partners {
     margin-bottom: 68px;
 }
 
@@ -860,6 +870,15 @@ footer {
 .slider--partners .slick-list {
     text-align: -webkit-center;
 }
+
+.slider--partners .slick-prev:before {
+    content: url(../images/button-left-partners.png)
+}
+
+.slider--partners .slick-next:before {
+    content: url(../images/button-right-partners.png)
+}
+
 
 .slider--partners .slick-arrow.slick-prev {
     left: 0;
@@ -1153,6 +1172,15 @@ button .icon__arrow {
     .card {
         flex-basis: 45%;
     }
+    
+    .contact h5 {
+        text-align: center;
+    }
+
+    .contact__phone,
+    .contact__email {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1190,7 +1218,7 @@ button .icon__arrow {
         text-align: center;
     }
 
-    .logo{
+    .logo {
         padding-bottom: 10px;
     }
 
@@ -1202,7 +1230,7 @@ button .icon__arrow {
         transition: all 2s ease;
     }
 
-    .menu li{
+    .menu li {
         font-size: 20px;
         padding: 6px;
     }

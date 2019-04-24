@@ -5,7 +5,7 @@ var timer;
 function scrollToId(targetId) {
     const target = document.getElementById(targetId);
     let targetPosition = target.offsetTop - 100 > 0 ? target.offsetTop - 100 : 0;
-    if (window.pageYOffset !== targetPosition && window.pageYOffset + window.innerHeight != document.body.clientHeight) {
+    if (window.pageYOffset !== targetPosition && (targetPosition < window.pageYOffset || window.pageYOffset + window.innerHeight != document.body.clientHeight)) {
         let step = 100;
         if (Math.abs(window.pageYOffset - targetPosition) < step) {
             step = Math.abs(window.pageYOffset - targetPosition);
