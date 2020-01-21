@@ -1,4 +1,6 @@
-# [Верстка лендинга по PSD макету.](https://sailorvladimir.github.io/FitnessTime "FitnessTime") #
+# Верстка лендинга по PSD макету. #
+
+[Демо](https://sailorvladimir.github.io/FitnessTime)
 
 
 ## Что сделал? ##
@@ -21,5 +23,13 @@
 - новые библиотеки (jQuery, slick.js)
 - анимации CSS
 
+## Полезные ссылки ##
+- [slick.js](https://kenwheeler.github.io/slick/)
+- [анимации CSS](https://cssreference.io/animations/)
+- [CSS transition](https://cssreference.io/transitions/)
+- [jQuery](https://jquery.com/)
+- [БЭМ](http://ru.bem.info/methodology/quick-start/ "Быстрый старт")
+- [Flexbox](http://cssreference.io/flexbox/ "Flexbox")
+- [Git](https://githowto.com/ru "Обучение git")
 
 
